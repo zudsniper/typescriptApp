@@ -1,7 +1,8 @@
 /node_modules
+/dist
 
 # secrets -- don't commit
-/credentials
+/resources/credentials
 
 # no project files
 .vscode
@@ -11,7 +12,7 @@
 /.env
 
 # winston logging files
-/logs/
+/logs
 
 # weird empty logs
 .node**
