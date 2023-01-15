@@ -1,0 +1,17 @@
+/node_modules
+
+# secrets -- don't commit
+/credentials
+
+# no project files
+.vscode
+.idea
+
+# don't commit secrets (though this file is actually safe)
+/.env
+
+# winston logging files
+/logs/
+
+# weird empty logs
+.node**
