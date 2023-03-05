@@ -16,6 +16,10 @@ Template for Typescript development in `Webstorm` by `JetBrains`.
   - if you have any trouble with this, try exec'ing `sudo npm i dotenv-cli -g` and see if it helps 
 
 ---
+<div align="center">
 
 ### That's all folks, just my template repo. 
-![logo-3_bigger](https://user-images.githubusercontent.com/16076573/212567662-740b18e5-b585-48c8-b374-8911e43bc30c.png)
+
+![zodtf_frog_forlightmode_rect](https://user-images.githubusercontent.com/16076573/222990820-18e35215-1cc2-425b-bfe8-55fced6c2867.png)
+
+</div>
