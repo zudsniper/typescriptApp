@@ -1,11 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "types": [
+        "node", 
+        "typescript"
+    ],
     "module": "commonjs",
+    "baseUrl": ".",
     "target": "es6",
     "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es6"
+    ]
   },
   "exclude": [
     "node_modules"

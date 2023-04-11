@@ -1,18 +1,22 @@
-/node_modules
-/dist
+# .gitignore
+
+# don't include any node_modules, regardless of if nested -- nor distribution files
+**/node_modules
+**/dist
 
 # secrets -- don't commit
 /resources/credentials
 
 # no project files
-.vscode
-.idea
+# TODO: if you don't want project files to be included in your commits, uncomment these!
+#.vscode
+#.idea
 
-# don't commit secrets (though this file is actually safe)
-/.env
+# don't commit env file, sensitive data in there probably
+**.env
 
-# winston logging files
-/logs
+# logging files
+**/logs
 
 # weird empty logs
 .node**

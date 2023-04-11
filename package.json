@@ -1,9 +1,11 @@
 {
   "name": "typescriptapp",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "this is a template for typescript applications by @zudsniper",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
+    "first-run": "npm i dotenv dotenv-cli -g; dotenv npm run build",
+    "clean": "rm -rf node_modules/ && rm -rf dist/ && rm -rf package-lock.json; echo -ne \"All clean. run 'npm run first-run' to get started.\\n\"",
     "build": "dotenv npm install; tsc -p .",
     "start": "dotenv node dist/index.js",
     "go": "dotenv npm run build && npm run start",
