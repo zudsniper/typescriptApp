@@ -1,8 +1,9 @@
 # `typescriptApp` Template $v2$
-Template for Typescript development in `Webstorm` by `JetBrains`.  
+### Template Directory for `NodeJS` powered development with `TypeScript`.  
+No IDE configuration files are provided as of now, but check [`CHANGELOG.md`](CHANGELOG.md) information on what has been added.  
 
 | **`VERSION`** |  `TITLE MESSAGE` |
-| :-----------: | :------  |
+| :-----------: | :--------------- |
 | $2.0.0$       | "fix becuz broke" 
 
 ---
@@ -12,44 +13,42 @@ Template for Typescript development in `Webstorm` by `JetBrains`.
 
 ## FEATURES
 - `tsconfig.json` configured for `es6` and uses `/src/` `/dist/` paradigm. 
-- custom `winston` logger class impl in `utils/logging.ts`
+- `winston` logger class impl in `utils/logging.ts`
+- `chalk` for pretty colors  
 - includes `.jshintrc` to make you use semicolons
 - `package.json` includes scripts for `first-run`, `build`, `start`, `clean`, and `go`. 
-- `dotenv` covers environment variables
-  - > if you have any trouble with this, try `npm run first-run` to install the `dotenv-cli` package. 
+- `dotenv` covers environment variables  
+   <sup> _if you have any trouble with this, try `npm run first-run` to install the `dotenv-cli` package._ </sup> 
 
 ## USAGE
 Here are steps to clone this repository and make it into your own.  
 1. **Clone this repo locally**. This will create a new folder from your current path called `typescriptApp`. 
-    ```bash
-    # use the new github CLI tool - `gh` - to clone
-    $ gh repo clone https://github.com/zudsniper/typescriptApp
-    # or use `git` like the good old days 
-    $ git clone https://github.com/zudsniper/typescriptApp
-    ```
+```sh
+# use the new github CLI tool - `gh` - to clone
+$ gh repo clone https://github.com/zudsniper/typescriptApp
+# or use `git` like the good old days 
+$ git clone https://github.com/zudsniper/typescriptApp
+```
 
 2. **Remove the `git` links to this repo** so that you can use the files as your own.  
-    ```bash
-    # 'change directory' (`cd`) into the cloned directory.  
-    $ cd typescriptApp
-    # WARNING: Use extreme caution when running this command. It can destroy 
-    #          everything on your computer in a single use. 
-    # 'remove' (`rm`) the folder `.git` recursively (`-r`) and finally (`-f`)
-    $ rm -rf .git
-    # next, return to your parent directory & rename the template folder to
-    # your desired project's name
-    $ cd .. && mv typescriptApp <YOUR_APP_NAME_HERE>
-    ```
-  
-  3. **Update name, description, and authorship information** in `package.json`. <sup>Do at least mention me in your `README.md` though. <sup>_Please?_ </sup></sup>  
-   > Do this in your text editor of choice, which should be `vim`!  
-   > -- [$zod$](https://github.com/zudsniper)  
-
-      ```bash
-      # here we `cd` into the newly renamed directory and open the package
-      #     json file with `vim` 
-      $ cd <YOUR_APP_NAME_HERE> && vim package.json
-      ``` 
+```sh
+# 'change directory' (`cd`) into the cloned directory.  
+$ cd typescriptApp
+# WARNING: Use extreme caution when running this command. It can destroy 
+#          everything on your computer in a single use. 
+# 'remove' (`rm`) the folder `.git` recursively (`-r`) and finally (`-f`)
+$ rm -rf .git
+# next, return to your parent directory & rename the template folder to
+# your desired project's name
+$ cd .. && mv typescriptApp <YOUR_APP_NAME_HERE>
+```
+3. **Update name, description, and authorship information** in `package.json`. <sup>Do at least mention me in your `README.md` though. <sup>_Please?_ </sup></sup>  
+ Do this in your text editor of choice!  
+```sh
+# here we `cd` into the newly renamed directory and open the package
+#     json file with `vim` 
+$ cd <YOUR_APP_NAME_HERE> && vim package.json
+``` 
   4. **GOOD TO GO**!  
 > $Good$ $luck$ $old$ $sport.$   
 
